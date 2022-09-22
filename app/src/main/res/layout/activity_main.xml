@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/BemVindo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:text="Bem vindo"
+            android:textAlignment="gravity"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="login"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="21sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:onClick="chamarLogin"
+            />
+
+        <Button
+            android:id="@+id/Cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Cadastro"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="21sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:onClick="chamarCadastro"/>
+
+        <Button
+            android:id="@+id/Sobre"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Sobre"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="21sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:onClick="chamarSobre"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
